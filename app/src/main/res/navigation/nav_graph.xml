@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/gameFragment">
+
+  <fragment
+    android:id="@+id/gameFragment"
+    android:name="uz.lazydevv.memorygame.ui.game.GameFragment"
+    android:label="fragment_game"
+    tools:layout="@layout/fragment_game" >
+    <action
+      android:id="@+id/action_gameFragment_to_gameEndFragment"
+      app:destination="@id/gameEndFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/gameEndFragment"
+    android:name="uz.lazydevv.memorygame.ui.game_end.GameEndFragment"
+    android:label="fragment_game_end"
+    tools:layout="@layout/fragment_game_end" />
+</navigation>

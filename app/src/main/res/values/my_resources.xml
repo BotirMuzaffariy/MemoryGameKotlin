@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="btn_padding_v">5dp</dimen>
+    <dimen name="images_interval">6dp</dimen>
+    <dimen name="main_layout_padding_h">24dp</dimen>
+    <dimen name="main_layout_padding_v">48dp</dimen>
+
+</resources>
