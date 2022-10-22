@@ -1,8 +1,9 @@
-package uz.lazydevv.memorygame
+package uz.lazydevv.memorygame.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation.findNavController
+import uz.lazydevv.memorygame.R
 
 class MainActivity : AppCompatActivity() {
 
