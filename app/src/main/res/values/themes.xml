@@ -13,5 +13,7 @@
     <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
     <item name="windowNoTitle">true</item>
+    <item name="android:fontFamily">@font/tribal</item>
+    <item name="android:navigationBarColor">@color/for_bars</item>
   </style>
 </resources>

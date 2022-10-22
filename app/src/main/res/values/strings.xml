@@ -1,3 +1,7 @@
 <resources>
+
   <string name="app_name">Memory Game</string>
+
+  <string name="game_title">&lt;Memory Game&gt;</string>
+
 </resources>
