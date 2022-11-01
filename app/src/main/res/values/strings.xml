@@ -3,5 +3,7 @@
   <string name="app_name">Memory Game</string>
 
   <string name="game_title">&lt;Memory Game&gt;</string>
+  <string name="you_win">[  You win  ]</string>
+  <string name="restart">Restart</string>
 
 </resources>

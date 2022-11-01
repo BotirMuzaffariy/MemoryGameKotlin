@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import uz.lazydevv.memorygame.R
 import uz.lazydevv.memorygame.databinding.FragmentGameBinding
@@ -165,6 +166,10 @@ class GameFragment : Fragment(R.layout.fragment_game) {
                 img2!!.visibility = View.INVISIBLE
 
                 availableImagesCount -= 2
+
+                if (availableImagesCount <= 0) {
+                    findNavController().navigate(R.id.action_gameFragment_to_gameEndFragment)
+                }
             }
 
             override fun onAnimationRepeat(animation: Animation) = Unit

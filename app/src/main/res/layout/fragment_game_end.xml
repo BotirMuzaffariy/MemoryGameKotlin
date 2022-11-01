@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="@color/whiter"
   tools:context=".ui.game_end.GameEndFragment">
 
-</FrameLayout>
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tv0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/you_win"
+    android:textColor="@color/for_bars"
+    android:textSize="48sp"
+    app:layout_constraintBottom_toTopOf="@id/btn_restart"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_restart"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/for_bars"
+    android:text="@string/restart"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    app:cornerRadius="18dp"
+    app:elevation="2dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv0"
+    app:layout_constraintWidth_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

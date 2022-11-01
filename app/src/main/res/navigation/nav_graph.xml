@@ -9,14 +9,18 @@
     android:id="@+id/gameFragment"
     android:name="uz.lazydevv.memorygame.ui.game.GameFragment"
     android:label="fragment_game"
-    tools:layout="@layout/fragment_game" >
+    tools:layout="@layout/fragment_game">
+
     <action
       android:id="@+id/action_gameFragment_to_gameEndFragment"
       app:destination="@id/gameEndFragment" />
+
   </fragment>
+
   <fragment
     android:id="@+id/gameEndFragment"
     android:name="uz.lazydevv.memorygame.ui.game_end.GameEndFragment"
     android:label="fragment_game_end"
     tools:layout="@layout/fragment_game_end" />
+
 </navigation>
